@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.rogergcc.nearplacestest99minutes.R
 import com.rogergcc.nearplacestest99minutes.databinding.FragmentPermissionBinding
-import com.rogergcc.nearplacestest99minutes.ui.main.PlacesFragmentDirections
 import com.rogergcc.nearplacestest99minutes.ui.utils.Permissions
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
@@ -29,8 +28,6 @@ class PermissionFragment : Fragment(), EasyPermissions.PermissionCallbacks {
     private var _binding: FragmentPermissionBinding? = null
     private val binding get() = _binding!!
 
-//    private val sharedViewModel: SharedViewModel by activityViewModels()
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,7 +39,6 @@ class PermissionFragment : Fragment(), EasyPermissions.PermissionCallbacks {
             if (Permissions.hasLocationPermission(requireContext())) {
 //                checkFirstLaunch()
 
-//                val action = PermissionFragmentDirections()
 
                 findNavController().navigate(R.id.action_permissionFragment_to_movieFragment)
             } else {
@@ -51,17 +47,6 @@ class PermissionFragment : Fragment(), EasyPermissions.PermissionCallbacks {
         }
 
         return binding.root
-    }
-
-    private fun checkFirstLaunch() {
-//        sharedViewModel.readFirstLaunch.observeOnce(viewLifecycleOwner, { firstLaunch ->
-//            if (firstLaunch) {
-//                findNavController().navigate(R.id.action_permissionFragment_to_add_geofence_graph)
-//                sharedViewModel.saveFirstLaunch(false)
-//            } else {
-//                findNavController().navigate(R.id.action_permissionFragment_to_mapsFragment)
-//            }
-//        })
     }
 
     override fun onRequestPermissionsResult(
