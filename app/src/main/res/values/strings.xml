@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NearPlacesTest99Minutes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mDescriptionPlace">short description of place</string>
+
+    <string name="permission_description">In order to use this application we will first need to request location permission from you. Otherwise we will not be able to provide you with our service. If you agree and wish to continue tap on the button below.</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="continue_btn">Continue</string>
+
+
+    <string name="title_dialog_alert">Aviso</string>
+    <string name="text_dialog_ask_enable_gps">Se requiere que active el GPS de su dispositivo para hacer seguimiento a su ubicación.</string>
+    <string name="buttonActivate">Activar</string>
+    <string name="buttonNegative">No, gracias</string>
+    <string name="buttonAllow">Permitir</string>
+    <string name="text_dialog_location_denied">El permiso fue denegado. Puede solicitarlo de nuevo en Ajustes de la aplicación</string>
+    <string name="text_dialog_location_rationale">A fin de mejorar la seguridad de los trabajadores durante la faena, Webcontrol puede tomar periódicamente datos de su ubicación. Puede activar esto en el menú Ajustes.</string>
+    <string name="buttonOk">Aceptar</string>
+    <string name="image_place">Image Place</string>
+
+</resources>
